@@ -12,5 +12,6 @@ WORKDIR /AstraSDK-v2.1.1-24f74b8b15-20200426T014025Z-Ubuntu18.04-x86_64/samples
 RUN cmake .
 RUN make
 WORKDIR bin
+EXPOSE 3000
 # CMD ["tail", "-f", "/dev/null"]
 CMD ./SimpleBodyViewer-SFML
